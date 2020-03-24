@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Scripts -->
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="mars-current-weather">
+      <h1 class="main-title">
+        Latest weather at Elysium Plantitia
+      </h1>
+
+      <div class="date">
+        <div class="section-title section--title--date">Sol 377</div>
+        <p class="date__day">September 31</p>
+      </div>
+
+      <div class="temp">
+        <h2 class="section-title">
+          Temperature
+        </h2>
+        <p class="reading">High: -20&deg;C</p>
+        <p class="reading">Low: -120&deg;C</p>
+      </div>
+
+
+      <div class="wind">
+          <h2 class="section-title">Wind
+          </h2>
+          <p class="reading">75 kph</p>
+
+          <div class="wind__direction">
+              <p class="sr-only">45&deg;C</>
+              <div class="wind__arrow"></div>
+          </div>
+      </div>
+
+      <div class="info">
+          <p>
+              Insight is taking daily weather measurements (temperature, wind, pressure) on the surface of Mars at Elysium Planitia, a flat, smooth plainnear Mars' equator.
+          </p>
+
+          <p>This is only a part of Insight's mission. <a href="https:/mars.nasa.gov/insight/mission/overview">Click here</a> to find out more.</p>
+      </div>
+
+      <div class="unit">
+          <label for="cel">&deg;C</label>
+       <input type="radio" id="cel" name="unit" checked>
+       <!-- when unit toggle is clicked the checkbox needs to change -->
+       <input type="radio" id="cel" name="unit" checked>
+        <button class="unit__toggle"></button>
+        <label for="fah">&deg;F</label>
+        <input type="radio" id="fah" name="unit">
+      </div>
+    </main>
+
+    <div class="previous-weather">
+        <label for="weather-toggle" class="show-previous-weather-toggle">&#8593; <span class="sr-only">Show previous weather</span></label>
+
+        <input type="checkbox" id="weather-toggle" class="show-previous-weather-toggle">
+
+        <h2 class="main-title">Previous 7 days</h2>
+
+        <div class="previous-days">
+            <div class="previous-day"></div>
+        </div>
+    </div>
+
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
